@@ -20,27 +20,16 @@ public class Day1 {
             System.out.println("Instructions are nowhere to be found");
             return;
         }
-        
-        System.out.println("Step 1 captcha is: " + step1(input));
-        System.out.println("Step 2 captcha is: " + step2(input));
+
+        System.out.println("Step 1 captcha is: " + solve(input, false));
+        System.out.println("Step 2 captcha is: " + solve(input, true));
 
     }
 
-    private static long step1(List<Integer> input) {
+    private static long solve(List<Integer> input, boolean step2) {
         long sum = 0;
         for (int i = 0; i < input.size(); i++) {
-            if (input.get(i) == input.get(i == input.size() - 1 ? 0 : i + 1)) {
-                sum += input.get(i);
-            }
-        }
-
-        return sum;
-    }
-
-    private static long step2(List<Integer> input) {
-        long sum = 0;
-        for (int i = 0; i < input.size(); i++) {
-            int next = (i + input.size() / 2) % input.size();
+            int next = (i + (step2 ? input.size() / 2 : 1)) % input.size();
 
             if (input.get(i) == input.get(next)) {
                 sum += input.get(i);

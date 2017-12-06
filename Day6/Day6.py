@@ -18,10 +18,6 @@ def solve(vals):
             
     print(len(seen))
     return vals
-        
-
-
-
 
 
 f = open('day6_input.txt', 'r')

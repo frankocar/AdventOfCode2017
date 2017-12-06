@@ -214,3 +214,8 @@ typings/
 .env
 
 # End of https://www.gitignore.io/api/java,node,eclipse,netbeans,intellij
+
+# Rust project files
+*/target.debug
+*.lock
+*.toml

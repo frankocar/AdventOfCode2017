@@ -30,7 +30,7 @@ public class Day1 {
         for (int i = 0; i < input.size(); i++) {
             int next = (i + (step2 ? input.size() / 2 : 1)) % input.size();
 
-            if (input.get(i) == input.get(next)) {
+            if (input.get(i).equals(input.get(next))) {
                 sum += input.get(i);
             }
         }

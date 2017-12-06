@@ -17,7 +17,6 @@ public class Day1 {
             }
         } catch (IOException e) {
             e.printStackTrace();
-            System.out.println("Instructions are nowhere to be found");
             return;
         }
 

@@ -13,7 +13,6 @@ public class Day2 {
             input = Files.readAllLines(Paths.get("day2_input.txt"));
         } catch (IOException e) {
             e.printStackTrace();
-            System.out.println("Instructions are nowhere to be found");
             return;
         }
 

@@ -17,18 +17,18 @@ fun solve(input : List<String>, step2 : Boolean): Int {
 
         var valid = true
         split.forEach each@{
-            var x : String
-            if (step2) {
-                var chars = it.toCharArray()
+            val x : String
+            x = if (step2) {
+                val chars = it.toCharArray()
                 chars.sort()
-                x = chars.joinToString("")
+                chars.joinToString("")
             } else {
-                x = it
+                it
             }
 
             if (!words.add(x)) {
-                valid = false;
-                return@each;
+                valid = false
+                return@each
             }
         }
 

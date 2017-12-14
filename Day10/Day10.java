@@ -26,7 +26,7 @@ public class Day10 {
         System.out.println("Step 2: " + step2);
     }
 
-    private static String step2(String input) {
+    public static String step2(String input) {
         List<Integer> in = new ArrayList<>();
         for (char x : input.toCharArray()) {
             in.add((int) x);

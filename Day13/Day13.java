@@ -23,8 +23,8 @@ public class Day13 {
         }
 
 
-        System.out.println(step1(map));
-        System.out.println(step2(map));
+        System.out.println("Step 1: " + step1(map));
+        System.out.println("Step 2: " + step2(map));
 
     }
 
